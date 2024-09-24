@@ -107,11 +107,9 @@ nav ul li:hover {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 90%;
     font-size: 16px;
-    max-width: 700px;
+    width: 600px;
 }
-
 .formulario button {
     padding: 10px 20px;
     background-color: #3498DB;
@@ -141,11 +139,11 @@ footer{
     margin-top: 20px;
 }
 
-input[type="text"], input[type="email"], textarea {
+.form-footer input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0 10px 0;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
 }
