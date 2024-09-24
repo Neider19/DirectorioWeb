@@ -4,6 +4,10 @@ body {
     padding: 0;
     overflow: hidden;
 }
+main {
+    margin-bottom: 0;
+    background-color: #F1FAEE;
+}
 
 header {
     background-color: #1D3557;
@@ -57,7 +61,7 @@ nav ul li:hover {
     background-color: #555;
 }
 
-.fondo {
+.fondo{
     flex: 1;
 }
 
@@ -70,6 +74,7 @@ nav ul li:hover {
     display: flex;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .inicio-sesion {
@@ -79,7 +84,7 @@ nav ul li:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F1FAEE;
+  
 }
 
 .formulario {
@@ -97,13 +102,14 @@ nav ul li:hover {
     color: #555;
 }
 
-.formulario input {
+.formulario input { 
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 90%;
     font-size: 16px;
+    max-width: 700px;
 }
 
 .formulario button {
@@ -118,5 +124,39 @@ nav ul li:hover {
 
 .formulario button:hover {
     text-decoration: none;
+    background-color: #555;
+}
+
+footer{
+    background-color: #1D3557;
+    width: auto;
+    height: auto;
+}
+.form-footer{
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+.footer-texto {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-footer button {
+    background-color: #3498DB;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-footer button:hover {
     background-color: #555;
 }
