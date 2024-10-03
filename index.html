@@ -33,14 +33,14 @@
             <div class="inicio-sesion">
                 <h1>Iniciar Sesion</h1>
                 <div class="formulario">
-                    <form action="/inicio.html" method="post">
+                    <form>
                         <label for="usuario"><strong>Usuario:</strong></label>
                         <input type="text" id="usuario" name="usuario" required placeholder="Usuario" size="10">
                         
                         <label for="password"> <strong>Contraseña:</strong></label>
                         <input type="password" id="password" name="password" required placeholder="Contraseña">
 
-                        <button type="submit">Ingresar</button>
+                        <button onclick="validarInicio()" >Ingresar</button>
                     </form>
                 </div>
             </div>
@@ -67,6 +67,7 @@
         </div>
     </footer>
 
+    <script src="JS/index.js"></script>
 </body>
 
 

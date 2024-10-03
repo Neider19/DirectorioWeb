@@ -31,7 +31,7 @@
             <div class="registrar">
                 <h1>Registrarse</h1>
                 <div class="formulario">
-                    <form action="/inicio.html" method="post">
+                    <form action="index.html">
                         <label for="usuario"><strong>Usuario:</strong></label>
                         <input type="text" id="usuario" name="usuario" required placeholder="Usuario">
 
@@ -39,13 +39,12 @@
                         <input type="number" id="telefono" name="telefono" placeholder="Teléfono" required>
 
                         <label for="correo"><strong>Correo: </strong></label>
-                        <input type="text" id="correo" name="correo" placeholder="Correo" required>
+                        <input type="email" id="correo" name="correo" placeholder="Correo" required>
 
                         <label for="password"> <strong>Contraseña:</strong></label>
                         <input type="password" id="password" name="password" required placeholder="Contraseña">
 
-                        <button type="submit">Registrar</button>
-
+                        <button type="submit" onclick="validarRegistro()">Registrar</button>
                     </form>
                 </div>
             </div>
@@ -67,6 +66,8 @@
             <p>&copy; Directorio Web. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="JS/registrar.js"></script>
 </body>
 
 </html>

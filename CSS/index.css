@@ -3,10 +3,26 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    box-sizing: border-box;
 }
+
 header {
     background-color: #1D3557;
     padding: 10px 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
 }
 
 .menu {
@@ -56,7 +72,7 @@ nav ul li:hover {
     background-color: #555;
 }
 
-.fondo{
+.fondo {
     flex: 1;
 }
 
@@ -69,7 +85,7 @@ nav ul li:hover {
     display: flex;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 .inicio-sesion {
@@ -98,14 +114,15 @@ nav ul li:hover {
     color: #555;
 }
 
-.formulario input { 
+.formulario input {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    
+
 }
+
 .formulario button {
     padding: 10px 20px;
     background-color: #3498DB;
@@ -121,21 +138,24 @@ nav ul li:hover {
     background-color: #555;
 }
 
-footer{
+footer {
     background-color: #1D3557;
     width: auto;
     height: auto;
 }
-.form-footer{
+
+.form-footer {
     max-width: 400px;
     margin: 0 auto;
 
 }
+
 .footer-texto {
     margin-top: 20px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0 10px 0;
@@ -143,6 +163,7 @@ input, textarea {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 .form-footer button {
     background-color: #3498DB;
     color: black;
@@ -151,6 +172,7 @@ input, textarea {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .form-footer button:hover {
     background-color: #555;
 }
