@@ -1,6 +1,6 @@
 function validarInicio(){
 
-    let username = "Neider"
+    let username = "Neider";
     let password = "123";
     
     if (username == document.getElementById("usuario").value && password == document.getElementById("password").value){

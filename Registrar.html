@@ -9,39 +9,23 @@
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-            <div class="logo">
-                <img src="Media/logo3.png" alt="" />
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="acercaDe.html">Acerca De</a></li>
-                    <li><a href="index.html">Iniciar Sesion</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <main>
 
         <div class="cuerpo">
-            <div class="fondo">
-                <img src="Media/fondo2.jpeg" alt="">
-            </div>
             <div class="registrar">
                 <h1>Registrarse</h1>
                 <div class="formulario">
                     <form action="index.html">
-                        <label for="usuario"><strong>Usuario:</strong></label>
+
                         <input type="text" id="usuario" name="usuario" required placeholder="Usuario">
 
-                        <label for="telefono"><strong>Teléfono: </strong></label>
-                        <input type="number" id="telefono" name="telefono" placeholder="Teléfono" required>
 
-                        <label for="correo"><strong>Correo: </strong></label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono"  required>
+
+
                         <input type="email" id="correo" name="correo" placeholder="Correo" required>
 
-                        <label for="password"> <strong>Contraseña:</strong></label>
+
                         <input type="password" id="password" name="password" required placeholder="Contraseña">
 
                         <button type="submit" onclick="validarRegistro()">Registrar</button>
@@ -52,21 +36,6 @@
         </div>
 
     </main>
-    <footer>
-        <h2>Contáctenos</h2>
-        <div class="form-footer">
-            <form class="form" action="#" method="post">
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="correo" placeholder="Tu correo electrónico" required>
-                <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div class="footer-texto">
-            <p>&copy; Directorio Web. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
     <script src="JS/registrar.js"></script>
 </body>
 

@@ -1,0 +1,25 @@
+{
+    "contactos": [
+        {
+            "id": 1,
+            "nombre": "Neider Ureche",
+            "telefono": "+57 304 3355491",
+            "correo": "neider@gmail.com",
+            "direccion": "carrera 2 a b"
+        },
+        {
+            "id": 2,
+            "nombre": "Pedro Muriel",
+            "telefono": "+57 304 2313213",
+            "correo": "pedro@gmail.com",
+            "direccion": "carrera 5 c b"
+        },
+        {
+            "id": 3,
+            "nombre": "Juan Gomez",
+            "telefono": "+57 304 123512",
+            "correo": "juan@gmail.com",
+            "direccion": "carrera 3 c b"
+        }
+    ]
+}
