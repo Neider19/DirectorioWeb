@@ -17,18 +17,21 @@
                 <div class="formulario">
                     <form action="index.html">
 
-                        <input type="text" id="usuario" name="usuario" required placeholder="Usuario">
+                        <input type="text" id="usuario" name="usuario" required placeholder="Usuario" autofocus>
 
 
-                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono"  required>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
 
 
                         <input type="email" id="correo" name="correo" placeholder="Correo" required>
 
 
                         <input type="password" id="password" name="password" required placeholder="Contraseña">
-
-                        <button type="submit" onclick="validarRegistro()">Registrar</button>
+                        <div class="button-container">
+                            <button type="submit" onclick="validarRegistro()">Registrar</button>
+                            <span>ó</span>
+                            <a href="index.html" class="ingresar-btn">Ingresar</a>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -36,6 +39,7 @@
         </div>
 
     </main>
+    
     <script src="JS/registrar.js"></script>
 </body>
 

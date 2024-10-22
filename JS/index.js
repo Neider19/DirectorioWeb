@@ -1,15 +1,17 @@
-function validarInicio(){
+function validarInicio() {
 
-    let username = "Neider";
-    let password = "123";
-    
-    if (username == document.getElementById("usuario").value && password == document.getElementById("password").value){
-        
-        window.location.href="./inicio.html";
+    let username = document.getElementById("usuario").value;
+   let password = document.getElementById("password").value;
+
+
+    if (username == "" || password == "") {
+        alert("El usuario y/o la contraseña no pueden estar en vacios")
+    }
+    else if (username == document.getElementById("usuario").value && password == document.getElementById("password").value) {
+
+        window.location.href = "./inicio.html";
         alert("Sesion Iniciada");
-    }
-    else {
+    } else
         alert("Usuario y/o contraseña incorrectos");
-    }
-
 }
+

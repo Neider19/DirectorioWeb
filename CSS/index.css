@@ -47,7 +47,27 @@ h1 {
     width: 90%;
 
 }
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
+.registrar-btn{
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.registrar-btn:hover {
+    text-decoration: none;
+    background-color: #555;
+}
 .formulario button {
     padding: 10px 20px;
     background-color: #3498DB;
@@ -62,3 +82,4 @@ h1 {
     text-decoration: none;
     background-color: #555;
 }
+

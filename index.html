@@ -17,22 +17,24 @@
                 <h1>Iniciar Sesion</h1>
                 <div class="formulario">
                     <form>
-                       
-                        <input type="text" id="usuario" name="usuario" required placeholder="Usuario" size="10">
+
+                        <input type="text" id="usuario" name="usuario" required placeholder="Usuario" size="10"
+                            autofocus>
 
                         <input type="password" id="password" name="password" required placeholder="Contraseña">
 
-                        <button onclick="validarInicio()">Ingresar</button>
+                        <div class="button-container">
+                            <button type="button" onclick="validarInicio()">Ingresar</button>
+                            <span>ó</span>
+                            <a href="Registrar.html" class="registrar-btn">Registrar</a>
 
-                        
-                    </form>
+                        </div>
                 </div>
+                </form>
             </div>
 
-        </div>
-
     </main>
-
+    
     <script src="JS/index.js"></script>
 </body>
 
