@@ -53,7 +53,9 @@ nav ul li:hover {
     border-radius: 3px;
     background-color: #555;
 }
-
+.container {
+    background-color: #F1FAEE;
+}
 .search-container {
     display: flex;
     justify-content: center;
@@ -68,7 +70,7 @@ nav ul li:hover {
     outline: none;
 }
 .search-container button {
-    padding: 10px;
+    padding: 15px;
     font-size: 16px;
     border: 2px solid #ccc;
     border-left: none;
@@ -77,8 +79,40 @@ nav ul li:hover {
     cursor: pointer;
     border-radius: 0 5px 5px 0;
 }
+
+.contacto {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    list-style-type: none;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center; /* Alinea verticalmente al centro */
+    justify-content: space-between; /* Espacio entre campos y el botón */
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Espacio entre los campos */
+}
+
+.contacto label {
+    font-weight: bold;
+    margin-right: 5px; /* Espacio entre el label y el valor */
+}
+
+.contacto span {
+    display: inline-block;
+    margin-right: 15px; /* Espacio entre los valores */
+}
+.boton {
+    margin-left: 10px;
+}
 button{
     padding: 10px;
+    margin-top: 10px;
     font-size: 16px;
     background-color: #201E43;
     color: white;
@@ -88,7 +122,14 @@ button{
 button:hover {
     background-color: #555;
 }
+.contactos {
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
 footer {
     background-color: #508C9B;
     height: auto;

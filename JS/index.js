@@ -1,17 +1,36 @@
 function validarInicio() {
+    let username = "Neider";
+    let password = "123";
 
-    let username = document.getElementById("usuario").value;
-   let password = document.getElementById("password").value;
+    let usuarioInput = document.getElementById("usuario").value;
+    let passwordInput = document.getElementById("password").value;
 
+    let mensaje = document.getElementById("mensaje"); 
 
-    if (username == "" || password == "") {
-        alert("El usuario y/o la contraseña no pueden estar en vacios")
+    
+    mensaje.textContent = "";
+    mensaje.className = "";  
+
+    if (usuarioInput === "" || passwordInput === "") {
+        mensaje.textContent = "El usuario y/o la contraseña no pueden estar vacíos";
+        mensaje.className = "error";
+        return false; 
+    } 
+    else if (usuarioInput === username && passwordInput === password) {
+        mensaje.textContent = "Inicio de sesión exitoso. Redirigiendo...";
+        mensaje.className = "success";
+
+       
+        setTimeout(function () {
+            window.location.href = "./inicio.html";
+        }, 1500);
+
+        return false; 
+    } 
+    else {
+        mensaje.textContent = "Usuario y/o contraseña incorrectos";
+        mensaje.className = "error";
+        return false; 
     }
-    else if (username == document.getElementById("usuario").value && password == document.getElementById("password").value) {
-
-        window.location.href = "./inicio.html";
-        alert("Sesion Iniciada");
-    } else
-        alert("Usuario y/o contraseña incorrectos");
 }
 

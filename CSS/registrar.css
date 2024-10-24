@@ -69,3 +69,11 @@ h1{
     text-decoration: none;
     background-color: #555;
 }
+.error{
+    color: red;
+    margin-top: 10px;
+}
+.success {
+    color: green;
+    margin-top: 10px;
+}

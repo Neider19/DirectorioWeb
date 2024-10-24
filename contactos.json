@@ -1,25 +1,52 @@
 {
     "contactos": [
         {
-            "id": 1,
+            
             "nombre": "Neider Ureche",
             "telefono": "+57 304 3355491",
             "correo": "neider@gmail.com",
-            "direccion": "carrera 2 a b"
+            "direccion": "carrera 2 a b",
+            "ciudad": "Santa Marta"
         },
         {
-            "id": 2,
+           
             "nombre": "Pedro Muriel",
             "telefono": "+57 304 2313213",
             "correo": "pedro@gmail.com",
-            "direccion": "carrera 5 c b"
+            "direccion": "carrera 5 c b",
+            "ciudad": "Santa Marta"
         },
         {
-            "id": 3,
+            
             "nombre": "Juan Gomez",
             "telefono": "+57 304 123512",
             "correo": "juan@gmail.com",
-            "direccion": "carrera 3 c b"
+            "direccion": "carrera 3 c b",
+            "ciudad": "Santa Marta"
+        },
+        {
+           
+            "nombre": "Juan Perez",
+            "telefono": "+57 304 1232323",
+            "correo": "juan@gmail.com",
+            "direccion": "carrera 3 z b",
+            "ciudad": "Santa Marta"
+        },
+        {
+            
+            "nombre": "Pedro Perez",
+            "telefono": "+57 304 1232323",
+            "correo": "pepo@gmail.com",
+            "direccion": "carrera 3 z b",
+            "ciudad": "Santa Marta"
+        },
+        {
+            
+            "nombre": "Juan Perez",
+            "telefono": "+57 304 1232323",
+            "correo": "juan@gmail.com",
+            "direccion": "carrera 3 z b",
+            "ciudad": "Santa Marta"
         }
     ]
 }

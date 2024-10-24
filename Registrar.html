@@ -10,36 +10,26 @@
 
 <body>
     <main>
-
         <div class="cuerpo">
             <div class="registrar">
                 <h1>Registrarse</h1>
                 <div class="formulario">
-                    <form action="index.html">
-
-                        <input type="text" id="usuario" name="usuario" required placeholder="Usuario" autofocus>
-
-
+                    <form id="registroForm" novalidate>
+                        <input type="text" id="usuario" name="usuario" placeholder="Usuario" required autofocus>
                         <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
-
-
                         <input type="email" id="correo" name="correo" placeholder="Correo" required>
-
-
-                        <input type="password" id="password" name="password" required placeholder="Contraseña">
+                        <input type="password" id="password" name="password" placeholder="Contraseña" required>
                         <div class="button-container">
-                            <button type="submit" onclick="validarRegistro()">Registrar</button>
+                            <button type="submit">Registrar</button>
                             <span>ó</span>
                             <a href="index.html" class="ingresar-btn">Ingresar</a>
                         </div>
+                        <div id="mensaje" class=""></div>
                     </form>
                 </div>
             </div>
-
         </div>
-
     </main>
-    
     <script src="JS/registrar.js"></script>
 </body>
 
