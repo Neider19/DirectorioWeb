@@ -2,59 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Contacto</title>
-    <link rel="stylesheet" href="CSS/registrarContacto.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Registrar Contacto</title> 
+    <link rel="stylesheet" href="CSS/registrarContacto.css"> <!-- Enlace a la hoja de estilos CSS para esta página -->
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-            <div class="logo">
-                <img src="Media/logo3.png" alt="" />
+    <header> <!-- Sección de encabezado de la página -->
+        <div class="menu"> <!-- Contenedor del menú de navegación -->
+            <div class="logo"> <!-- Contenedor para el logo -->
+                <img src="Media/logo3.png" alt="" /> <!-- Imagen del logo de la página -->
             </div>
-            <nav>
-                <ul>
-                    <li><a href="inicio.html">Contactos</a></li>
-                    <li><a href="index.html">Cerrar Sesion</a></li>
+            <nav> <!-- Navegación del sitio -->
+                <ul> <!-- Lista de elementos de navegación -->
+                    <li><a href="inicio.html">Contactos</a></li> <!-- Enlace a la página de contactos -->
+                    <li class="cerrarSesionBtn" onclick="confirmarCerrarSesion()">Cerrar Sesión</li> <!-- Botón para cerrar sesión -->
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
-        <div class="cuerpo">
-            <div class="registrarContacto">
-                <h1>Registrar Contacto</h1>
-                <div class="formulario">
-                    <form method="post">
+    <main> <!-- Contenedor principal para el contenido de la página -->
+        <div class="cuerpo"> <!-- Sección principal que contiene el formulario de registro de contacto -->
+            <div class="registrarContacto"> <!-- Contenedor específico para el formulario de registro de contacto -->
+                <h1>Registrar Contacto</h1> <!-- Título de la sección de registro de contacto -->
+                <div class="formulario"> <!-- Contenedor para el formulario -->
+                    <form method="post"> <!-- Formulario que enviará datos mediante el método POST -->
+                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre" autofocus> <!-- Campo de entrada para el nombre del contacto -->
+                        
+                        <input type="email" id="correo" name="correo" required placeholder="Correo"> <!-- Campo de entrada para el correo electrónico del contacto -->
+                        
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Telefono"> <!-- Campo de entrada para el número de teléfono del contacto -->
+                        
+                        <input type="text" id="direccion" name="direccion" required placeholder="Direccion"> <!-- Campo de entrada para la dirección del contacto -->
+                        
+                        <input type="text" id="ciudad" name="ciudad" required placeholder="Ciudad"> <!-- Campo de entrada para la ciudad del contacto -->
 
-                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre" autofocus>
-
-                        <input type="email" id="correo" name="coreeo" required placeholder="Correo">
-
-                        <input type="tel" id="telefono" name="telefono" required placeholder="Telefono">
-
-                        <input type="text" id="direccion" name="direccion" required placeholder="Direccion">
-
-                        <input type="text" id="ciudad" name="ciudad" required placeholder="Ciudad">
-
-
-
-                        <button type="submit">Registrar Contacto</button>
+                        <button type="submit">Registrar Contacto</button> <!-- Botón para enviar el formulario y registrar el contacto -->
                     </form>
                 </div>
             </div>
-
         </div>
     </main>
-    <footer>
-
-        <div class="footer-texto">
-            <p>&copy; Directorio Web. Todos los derechos reservados.</p>
+    <footer> <!-- Sección del pie de página -->
+        <div class="footer-texto"> <!-- Contenedor para el texto del pie de página -->
+            <p>&copy; Directorio Web. Todos los derechos reservados.</p> <!-- Mensaje de derechos de autor -->
         </div>
     </footer>
-    <script src="JS/registrarContacto.js"></script>
+    <script src="JS/registrarContacto.js"></script> <!-- Enlace al script JavaScript que maneja la lógica del registro de contactos -->
 </body>
 
 </html>

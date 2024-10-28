@@ -1,141 +1,154 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #F5F5F5;
+    font-family: Arial, sans-serif; /* Establece la fuente general del documento */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 0; /* Elimina el padding por defecto del navegador */
+    overflow: hidden; /* Oculta el desbordamiento */
+    display: flex; /* Usando flexbox para la disposición de los elementos */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    min-height: 100vh; /* Altura mínima del cuerpo para ocupar toda la ventana */
+    background-color: #F5F5F5; /* Color de fondo suave */
 }
 header {
-    background-color: #508C9B;
-    padding: 10px 0;
+    background-color: #508C9B; /* Color de fondo del encabezado */
+    padding: 10px 0; /* Espaciado interno para el encabezado */
 }
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.logo img {
-    height: 80px;
-    width: 80px;
-    border-radius: 50px;
-}
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: end;
-    margin-left: auto;
-    border: 3px;
-    gap: 10px;
-}
-nav ul li {
-    margin: 0 10px;
-    width: 100px;
-    height: 50px;
-    background-color: #201E43;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-nav ul li:hover {
-    border-radius: 3px;
-    background-color: #555;
-}
-.container {
-    background-color: #F1FAEE;
-}
-.search-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-.search-container input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    width: 300px;
-    border: 2px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-}
-.search-container button {
-    padding: 15px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-left: none;
-    background-color: #201E43;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 5px 5px 0;
+    display: flex; /* Usando flexbox para organizar el menú */
+    justify-content: space-between; /* Espacio entre elementos del menú */
+    align-items: center; /* Centra verticalmente los elementos */
+    max-width: 1200px; /* Ancho máximo del menú */
+    margin: 0 auto; /* Centra el menú horizontalmente */
+    padding: 0 20px; /* Espaciado interno lateral */
 }
 
+.logo img {
+    height: 80px; /* Altura de la imagen del logo */
+    width: 80px; /* Ancho de la imagen del logo */
+    border-radius: 50px; /* Bordes redondeados para la imagen del logo */
+}
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    display: flex; /* Usando flexbox para disposición de elementos de navegación */
+    align-items: end; /* Alinea los elementos al final */
+    margin-left: auto; /* Empuja el menú hacia la derecha */
+    border: 3px; /* Establece un borde (aunque sin valor específico) */
+    gap: 10px; /* Espacio entre elementos del menú */
+}
+
+nav ul li {
+    margin: 0 10px; /* Espacio lateral entre elementos de la lista */
+    width: 100px; /* Ancho fijo para los elementos de la lista */
+    height: 50px; /* Altura fija para los elementos de la lista */
+    background-color: #201E43; /* Color de fondo de los elementos de la lista */
+    display: flex; /* Usando flexbox para disposición de contenido dentro del elemento */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    border-radius: 5px; /* Bordes redondeados para los elementos de la lista */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado en los enlaces */
+    color: white; /* Color del texto de los enlaces */
+}
+
+nav ul li:hover {
+    border-radius: 3px; /* Cambia el radio de borde al pasar el mouse */
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+}
+.container {
+    background-color: #F1FAEE; /* Color de fondo del contenedor principal */
+}
+.search-container {
+    display: flex; /* Usando flexbox para organizar el contenedor de búsqueda */
+    justify-content: center; /* Centra el contenedor de búsqueda horizontalmente */
+    margin-top: 50px; /* Espaciado superior para separación */
+}
+
+.search-container input[type="text"] {
+    padding: 10px; /* Espaciado interno del campo de texto */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    width: 300px; /* Ancho fijo del campo de texto */
+    border: 2px solid #ccc; /* Borde ligero para el campo de texto */
+    border-radius: 5px 0 0 5px; /* Bordes redondeados solo a la izquierda */
+    outline: none; /* Elimina el contorno al enfocar el campo de texto */
+}
+
+.search-container button {
+    padding: 15px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    border: 2px solid #ccc; /* Borde ligero para el botón */
+    border-left: none; /* Elimina el borde izquierdo */
+    background-color: #201E43; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 0 5px 5px 0; /* Bordes redondeados solo a la derecha */
+}
 .contacto {
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    list-style-type: none;
-    background-color: #f9f9f9;
-    display: flex;
-    align-items: center; /* Alinea verticalmente al centro */
+    padding: 15px; /* Espaciado interno para cada contacto */
+    margin-bottom: 20px; /* Espaciado inferior para separación entre contactos */
+    border: 1px solid #ddd; /* Borde ligero para los contactos */
+    border-radius: 5px; /* Bordes redondeados para los contactos */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    background-color: #f9f9f9; /* Color de fondo para los contactos */
+    display: flex; /* Usando flexbox para organizar el contenido */
+    align-items: center; /* Centra verticalmente los elementos dentro del contacto */
     justify-content: space-between; /* Espacio entre campos y el botón */
 }
 
 .campo {
-    display: flex;
-    align-items: center;
+    display: flex; /* Usando flexbox para organizar los campos */
+    align-items: center; /* Centra verticalmente los campos */
     margin-right: 20px; /* Espacio entre los campos */
 }
 
 .contacto label {
-    font-weight: bold;
+    font-weight: bold; /* Establece el peso de la fuente en negrita */
     margin-right: 5px; /* Espacio entre el label y el valor */
 }
 
 .contacto span {
-    display: inline-block;
+    display: inline-block; /* Muestra el valor como un bloque en línea */
     margin-right: 15px; /* Espacio entre los valores */
 }
+
 .boton {
-    margin-left: 10px;
+    margin-left: 10px; /* Espacio a la izquierda del botón */
+    margin-right: 10px; /* Espacio a la derecha del botón */
 }
-button{
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 16px;
-    background-color: #201E43;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 5px 5px 0;
+button {
+    padding: 10px; /* Espaciado interno para el botón */
+    margin-top: 10px; /* Espacio superior para separación */
+    font-size: 16px; /* Tamaño de fuente del texto en el botón */
+    background-color: #201E43; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 0 5px 5px 0; /* Bordes redondeados solo a la derecha */
 }
+
 button:hover {
-    background-color: #555;
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
 }
 .contactos {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+    display: flex; /* Usando flexbox para organizar contactos */
+    justify-content: center; /* Centra los contactos horizontalmente */
+    align-items: center; /* Centra los contactos verticalmente */
 }
 footer {
-    background-color: #508C9B;
-    height: auto;
-    margin-top: auto;
+    background-color: #508C9B; /* Color de fondo del pie de página */
+    height: auto; /* Altura automática para adaptarse al contenido */
+    margin-top: auto; /* Empuja el pie de página hacia la parte inferior */
 }
 
 .footer-texto {
-    margin-top: 20px;
+    margin-top: 20px; /* Espacio superior para separación del texto en el pie de página */
+}
+.cerrarSesionBtn {
+    margin-top: 10px; /* Espacio superior para separación */
+    font-size: 16px; /* Tamaño de fuente del texto en el botón */
+    background-color: #201E43; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 0 5px 5px 0; /* Bordes redondeados solo a la derecha */
 }

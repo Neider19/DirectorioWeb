@@ -1,93 +1,93 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #F5F5F5 rgb(51, 51, 51);
-    color: #333333;
+    font-family: Arial, sans-serif; /* Establece la fuente general del documento */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 0; /* Elimina el padding por defecto del navegador */
+    overflow: hidden; /* Oculta el desbordamiento */
+    display: flex; /* Usando flexbox para centrar los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100vh; /* Establece la altura al 100% de la ventana del navegador */
+    background-color: #F5F5F5; /* Color de fondo suave */
+    color: #333333; /* Color del texto */
 }
+
 
 .cuerpo {
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    width: 100%; /* Ancho completo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    display: flex; /* Usando flexbox para organización interna */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
 }
 
+
 h1 {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Usando flexbox para el encabezado */
+    justify-content: center; /* Centra el texto del encabezado */
 }
 
 .inicio-sesion {
-    padding: 40px;
-    background-color: #F1FAEE;
+    padding: 40px; /* Espaciado interno para separar el contenido de los bordes */
+    background-color: #F1FAEE; /* Color de fondo para el área de inicio de sesión */
 }
 
 .formulario {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    max-width: 300px;
-    margin: 0 auto;
+    display: flex; /* Usando flexbox para organización interna */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Alineación centrada del texto */
+    max-width: 300px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario en la pantalla */
 }
+
 
 .formulario input {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 90%;
-
-}
-.button-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    padding: 10px; /* Espaciado interno para mayor comodidad */
+    margin-bottom: 20px; /* Espaciado inferior para separación entre campos */
+    border: 1px solid #ccc; /* Borde ligero para los campos de entrada */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    width: 90%; /* Ancho del campo de entrada */
 }
 
-.registrar-btn{
-    padding: 10px 20px;
-    background-color: #3498DB;
-    color: #333333;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
-}
-.registrar-btn:hover {
-    text-decoration: none;
-    background-color: #555;
-}
-.formulario button {
-    padding: 10px 20px;
-    background-color: #3498DB;
-    color: #333333;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+/* Estilo de enfoque para el campo de entrada */
+.formulario input:focus {
+    border-color: #3498DB; /* Cambia el color del borde al enfocar */
+    outline: none; /* Elimina el contorno predeterminado */
 }
 
-.formulario button:hover {
-    text-decoration: none;
-    background-color: #555;
+.button-container {
+    display: flex; /* Usando flexbox para organización de botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
+    gap: 10px; /* Espaciado entre botones */
+    
 }
 
-.error{
-    color: red;
-    margin-top: 10px;
+
+.registrar-btn, .formulario button {
+    padding: 10px 20px; /* Espaciado interno para comodidad al hacer clic */
+    background-color: #3498DB; /* Color de fondo para los botones */
+    color: #333333; /* Color del texto en los botones */
+    border: none; /* Sin borde para un estilo limpio */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente del texto en los botones */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-decoration: none; /* Evita el subrayado*/
 }
+
+/* Estilo de hover para los botones */
+.registrar-btn:hover, .formulario button:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+.error {
+    color: red; /* Color del texto para mensajes de error */
+    margin-top: 10px; /* Espaciado superior para separación */
+}
+
 .success {
-    color: green;
-    margin-top: 10px;
+    color: green; /* Color del texto para mensajes de éxito */
+    margin-top: 10px; /* Espaciado superior para separación */
 }

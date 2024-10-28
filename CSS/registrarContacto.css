@@ -1,114 +1,118 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #F5F5F5 rgb(51, 51, 51);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: Arial, sans-serif; /* Establece la fuente general del documento */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 0; /* Elimina el padding por defecto del navegador */
+    overflow: hidden; /* Oculta el desbordamiento */
+    background-color: #F5F5F5; /* Color de fondo suave */
+    display: flex; /* Usando flexbox para la disposición de los elementos */
+    flex-direction: column; /* Orienta los elementos en una columna */
+    min-height: 100vh; /* Altura mínima del cuerpo para ocupar toda la ventana */
 }
 footer {
-    margin-top: auto;
+    margin-top: auto; /* Empuja el pie de página hacia el fondo del contenedor */
 }
 header {
-    background-color: #508C9B;
-    padding: 10px 0;
+    background-color: #508C9B; /* Color de fondo del encabezado */
+    padding: 10px 0; /* Espaciado interno del encabezado */
 }
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    display: flex; /* Usando flexbox para organizar el menú */
+    justify-content: space-between; /* Espacio entre elementos del menú */
+    align-items: center; /* Centra verticalmente los elementos */
+    max-width: 1200px; /* Ancho máximo del menú */
+    margin: 0 auto; /* Centra el menú horizontalmente */
+    padding: 0 20px; /* Espaciado interno del menú */
 }
 .logo img {
-    height: 80px;
-    width: 80px;
-    border-radius: 50px;
+    height: 80px; /* Altura del logo */
+    width: 80px; /* Ancho del logo */
+    border-radius: 50px; /* Bordes redondeados para el logo */
 }
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: end;
-    margin-left: auto;
-    border: 3px;
-    gap: 10px;
+    list-style: none; /* Elimina el estilo de lista */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    display: flex; /* Usando flexbox para organizar los elementos de navegación */
+    align-items: end; /* Alinea los elementos al final */
+    margin-left: auto; /* Empuja la lista hacia la derecha */
+    border: 3px; /* Borde opcional (sin especificar color o estilo) */
+    gap: 10px; /* Espacio entre los elementos de la lista */
 }
+
 nav ul li {
-    margin: 0 10px;
-    width: 100px;
-    height: 50px;
-    background-color: #201E43;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 10px; /* Espacio lateral entre los elementos de la lista */
+    width: 100px; /* Ancho de cada elemento de la lista */
+    height: 50px; /* Altura de cada elemento de la lista */
+    background-color: #201E43; /* Color de fondo de los elementos de la lista */
+    display: flex; /* Usando flexbox para organizar el contenido del elemento */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
 }
+
 nav ul li a {
-    text-decoration: none;
-    border-radius: 3px;
-    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border-radius: 3px; /* Bordes redondeados para los enlaces */
+    color: white; /* Color del texto de los enlaces */
 }
+
 nav ul li:hover {
-    border-radius: 3px;
-    background-color: #555;
+    border-radius: 3px; /* Mantiene el borde redondeado en hover */
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
 }
-
 .cuerpo {
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    width: 100%; /* Ancho completo del contenedor principal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el contenedor */
+    display: flex; /* Usando flexbox para organizar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 .registrarContacto {
-    padding: 40px;
-    background-color: #F1FAEE;
-    
+    padding: 40px; /* Espaciado interno para el área de registro */
+    background-color: #F1FAEE; /* Color de fondo del área de registro */
 }
 .formulario {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 300px;
-    margin: 0 auto;
+    display: flex; /* Usando flexbox para organizar los elementos dentro del formulario */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Alineación del texto al centro */
+    max-width: 300px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
 }
-
-.formulario input { 
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    
+.formulario input {
+    padding: 10px; /* Espaciado interno de los campos de entrada */
+    margin-bottom: 20px; /* Espacio inferior entre campos */
+    border: 1px solid #ccc; /* Borde ligero para los campos */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente del texto */
 }
 .formulario button {
-    padding: 10px 20px;
-    background-color: #201E43;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #201E43; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
 .formulario button:hover {
-    text-decoration: none;
-    background-color: #555;
+    text-decoration: none; /* Mantiene el texto sin subrayado en hover */
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
 }
-footer{
-    background-color: #508C9B;
-    position: fixed;
-    bottom: 0;
-    width:  100%;
+footer {
+    background-color: #508C9B; /* Color de fondo del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior de la ventana */
+    bottom: 0; /* Coloca el pie de página al fondo */
+    width: 100%; /* Ancho completo del pie de página */
 }
 .footer-texto {
-    margin-top: 20px;
+    margin-top: 20px; /* Espacio superior para separación */
+}
+.cerrarSesionBtn {
+    margin-top: 10px; /* Espacio superior para separación */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    background-color: #201E43; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 0 5px 5px 0; /* Bordes redondeados solo a la derecha */
 }

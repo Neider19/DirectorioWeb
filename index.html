@@ -2,45 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directorio Web</title>
-    <link rel="stylesheet" href="CSS/index.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Directorio Web</title> 
+    <link rel="stylesheet" href="CSS/index.css"> <!-- Enlace a la hoja de estilos CSS para esta página -->
 </head>
 
 <body>
 
     <main>
-        <div class="cuerpo">
+        <div class="cuerpo"> <!-- Contenedor principal para el contenido de la página -->
 
-            <div class="inicio-sesion">
-                <h1>Iniciar Sesion</h1>
-                <div class="formulario">
+            <div class="inicio-sesion"> <!-- Sección dedicada al inicio de sesión -->
+                <h1>Iniciar Sesion</h1> <!-- Título de la sección de inicio de sesión -->
+                <div class="formulario"> <!-- Contenedor para el formulario de inicio de sesión -->
                     <form>
 
-                        <input type="text" id="usuario" name="usuario" required placeholder="Usuario" size="10"
-                            autofocus>
+                        <input type="text" id="usuario" name="usuario" required placeholder="Usuario" size="10" autofocus>
+                        <!-- Campo de entrada para el nombre de usuario, obligatorio y enfocado al cargar la página -->
 
                         <input type="password" id="password" name="password" required placeholder="Contraseña">
+                        <!-- Campo de entrada para la contraseña, obligatorio -->
 
-                        <div class="button-container">
+                        <div class="button-container"> <!-- Contenedor para los botones -->
                             <button type="button" onclick="validarInicio()">Ingresar</button>
-                            <span>ó</span>
+                            <!-- Botón para iniciar sesión que llama a la función validarInicio() al hacer clic -->
+                            <span>ó</span> <!-- Separador para indicar la opción de registro -->
                             <a href="Registrar.html" class="registrar-btn">Registrar</a>
-
-                            
+                            <!-- Enlace a la página de registro para nuevos usuarios -->
                         </div>
 
-
-                        <div id="mensaje" class=""></div>
+                        <div id="mensaje" class=""></div> <!-- Elemento para mostrar mensajes de error o éxito -->
+                    </form>
                 </div>
-                </form>
             </div>
 
+        </div>
     </main>
 
-    <script src="JS/index.js"></script>
+    <script src="JS/index.js"></script> <!-- Enlace al script JavaScript para la lógica de inicio de sesión -->
 </body>
-
 
 </html>

@@ -2,46 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca De</title>
-    <link rel="stylesheet" href="CSS/acercaDe.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Acerca De</title> 
+    <link rel="stylesheet" href="CSS/acercaDe.css"> <!-- Enlace a la hoja de estilos CSS -->
 </head>
 
 <body>
     <header>
         <div class="menu">
             <div class="logo">
-                <img src="Media/logo3.png" alt="" />
+                <img src="Media/logo3.png" alt="Logo de la empresa" /> <!-- Logo de la empresa con texto alternativo -->
             </div>
             <nav>
                 <ul>
-                    <li><a href="inicio.html">Contactos</a></li>
-                    <li><a href="index.html">Cerrar Sesion</a></li>
+                    <li><a href="inicio.html">Contactos</a></li> <!-- Enlace a la página de contactos -->
+                    <li class="cerrarSesionBtn" onclick="confirmarCerrarSesion()">Cerrar Sesión</li> <!-- Botón para cerrar sesión -->
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
-        <div class="acercaDe">
-            <h1> Acerca De:</h1>
-            <p>"Nuestro directorio de contactos personales está diseñado para ayudar a las personas a conectarse de
-                manera
-                sencilla
-                y segura. Ya sea para hacer nuevos amigos, ampliar tu red de contactos profesionales o encontrar a
-                personas
-                con
-                intereses comunes, nuestra plataforma facilita el acceso a perfiles confiables."</p>
+        <div class="acercaDe"> <!-- Sección principal que contiene información sobre el directorio -->
+            <h2>Acerca de Nuestro Directorio</h2>
+            <p>En un mundo cada vez más interconectado, contar con una red confiable de contactos es esencial, tanto en el ámbito personal como profesional. <strong>Nuestro Directorio de Contactos Personales</strong> está diseñado pensando en la facilidad de uso y la seguridad, con el objetivo de ayudar a las personas a conectarse de manera rápida y segura.</p>
+
+            <p>Ya sea que estés buscando hacer nuevos amigos, expandir tu red profesional o simplemente encontrar personas con intereses similares, nuestra plataforma te permite hacerlo con confianza. Sabemos lo importante que es contar con un espacio que facilite la interacción genuina y efectiva, y hemos creado este directorio pensando precisamente en esas necesidades.</p>
+
+            <h3>¿Por qué Usar Nuestro Directorio?</h3> <!-- Subtítulo que introduce la sección de beneficios -->
+            <ul>
+                <li><strong>Red Amplia y Verificada:</strong> Cada usuario que forma parte de nuestra comunidad pasa por un proceso de verificación para garantizar que la información proporcionada es auténtica. De esta manera, puedes confiar en que estás conectando con personas reales que buscan lo mismo que tú: nuevas oportunidades de interacción.</li>
+
+                <li><strong>Interfaz Intuitiva:</strong> Hemos desarrollado una plataforma sencilla y fácil de usar, para que cualquier persona, sin importar su nivel de experiencia tecnológica, pueda buscar, agregar y gestionar contactos de manera efectiva. Puedes encontrar personas por nombre, ubicación, intereses o incluso profesiones, adaptando tus búsquedas a lo que necesitas.</li>
+
+                <li><strong>Privacidad y Seguridad:</strong> La seguridad de nuestros usuarios es nuestra prioridad. Todas las comunicaciones y datos están protegidos con los más altos estándares de encriptación, lo que asegura que tu información personal esté siempre resguardada. Además, contamos con estrictas políticas de privacidad para proteger tu identidad y tus datos personales.</li>
+
+                <li><strong>Un Entorno Confiable:</strong> Creemos en la construcción de comunidades que promuevan el respeto y la confianza. Por eso, cada perfil dentro de nuestro directorio es cuidadosamente revisado, permitiendo que nuestros usuarios se sientan seguros al interactuar y conectar con nuevas personas. Ya sea que estés ampliando tu red profesional o buscando nuevos amigos, sabes que lo haces en un entorno donde la confianza es clave.</li>
+            </ul>
+
+            <h3>Funcionalidades Clave</h3> <!-- Subtítulo que introduce la sección de funcionalidades -->
+            <ul>
+                <li><strong>Búsqueda Avanzada:</strong> Filtra tus búsquedas por intereses, profesiones, ubicación o incluso afinidades personales, lo que te permitirá encontrar contactos específicos de manera más efectiva.</li>
+
+                <li><strong>Perfil Personalizado:</strong> Crea un perfil detallado que te permita mostrar tus intereses, habilidades y datos relevantes para que otros usuarios te encuentren con facilidad. Puedes gestionar la visibilidad de tu información para tener el control total sobre quién accede a tus datos.</li>
+
+                <li><strong>Conexiones Seguras:</strong> Establece conexiones con otros usuarios a través de nuestro sistema seguro de mensajería interna, garantizando que todas tus interacciones se mantengan privadas.</li>
+
+                <li><strong>Recomendaciones Inteligentes:</strong> Nuestro sistema utiliza algoritmos de coincidencia inteligente que te sugerirán contactos basados en tus intereses y perfiles similares, ayudándote a conectar con personas que realmente pueden aportarte valor.</li>
+            </ul>
+
+            <h3>Nuestra Visión</h3> <!-- Subtítulo que describe la visión de la plataforma -->
+            <p>El propósito principal de nuestra plataforma es facilitar las conexiones humanas de una manera que sea accesible para todos. Sabemos que detrás de cada contacto puede haber una oportunidad significativa: un nuevo trabajo, una amistad duradera o una colaboración profesional. Queremos que cada usuario encuentre valor real en cada interacción y que logre construir relaciones que perduren.</p>
+
+            <p>Nos esforzamos por ser más que un simple directorio de contactos. Somos una herramienta para empoderar a las personas a crear y cultivar redes sociales y profesionales que las apoyen en sus objetivos personales y profesionales.</p>
+
+            <h3>Únete a la Comunidad</h3> <!-- Subtítulo que invita a unirse a la comunidad -->
+            <p>Al unirte a <strong>nuestro Directorio de Contactos</strong>, estarás dando un paso importante para construir relaciones valiosas y duraderas. No importa si estás comenzando a expandir tu red o si ya tienes experiencia en crear conexiones, aquí encontrarás un entorno seguro y amigable donde puedes crecer a nivel personal y profesional.</p>
+
+            <p><strong>Empieza hoy mismo</strong> y descubre cuántas puertas puede abrirte nuestra plataforma.</p>
         </div>
     </main>
 
-
     <footer>
         <div class="footer-texto">
-            <p>&copy; Directorio Web. Todos los derechos reservados.</p>
+            <p>&copy; Directorio Web. Todos los derechos reservados.</p> <!-- Información de derechos de autor -->
         </div>
     </footer>
-    
+
+    <script src="JS/acercaDe.js"></script> <!-- Enlace al script de funcionalidades de la página -->
 </body>
 
 </html>

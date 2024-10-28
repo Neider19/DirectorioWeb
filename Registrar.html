@@ -2,35 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Usuario</title>
-    <link rel="stylesheet" href="CSS/registrar.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Registrar Usuario</title> 
+    <link rel="stylesheet" href="CSS/registrar.css"> <!-- Enlace a la hoja de estilos CSS para esta página -->
 </head>
 
 <body>
-    <main>
-        <div class="cuerpo">
-            <div class="registrar">
-                <h1>Registrarse</h1>
-                <div class="formulario">
-                    <form id="registroForm" novalidate>
-                        <input type="text" id="usuario" name="usuario" placeholder="Usuario" required autofocus>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
-                        <input type="email" id="correo" name="correo" placeholder="Correo" required>
-                        <input type="password" id="password" name="password" placeholder="Contraseña" required>
-                        <div class="button-container">
-                            <button type="submit">Registrar</button>
-                            <span>ó</span>
-                            <a href="index.html" class="ingresar-btn">Ingresar</a>
+    <main> <!-- Contenedor principal para el contenido de la página -->
+        <div class="cuerpo"> <!-- Sección principal que contiene el formulario de registro -->
+            <div class="registrar"> <!-- Contenedor específico para el formulario de registro -->
+                <h1>Registrarse</h1> <!-- Título de la sección de registro -->
+                <div class="formulario"> <!-- Contenedor para el formulario -->
+                    <form id="registroForm" novalidate> <!-- Formulario para registrar un nuevo usuario, id para referencia y novalidate para evitar validación HTML automática -->
+                        <input type="text" id="usuario" name="usuario" placeholder="Usuario" required autofocus> <!-- Campo de entrada para el nombre de usuario -->
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required> <!-- Campo de entrada para el teléfono, requerido -->
+                        <input type="email" id="correo" name="correo" placeholder="Correo" required> <!-- Campo de entrada para el correo electrónico, requerido -->
+                        <input type="password" id="password" name="password" placeholder="Contraseña" required> <!-- Campo de entrada para la contraseña, requerido -->
+                        <div class="button-container"> <!-- Contenedor para los botones -->
+                            <button type="submit">Registrar</button> <!-- Botón para enviar el formulario y registrar al usuario -->
+                            <span>ó</span> <!-- Texto de separación entre botones -->
+                            <a href="index.html" class="ingresar-btn">Ingresar</a> <!-- Enlace para ir a la página de inicio de sesión -->
                         </div>
-                        <div id="mensaje" class=""></div>
+                        <div id="mensaje" class=""></div> <!-- Contenedor para mostrar mensajes de error o éxito -->
                     </form>
                 </div>
             </div>
         </div>
     </main>
-    <script src="JS/registrar.js"></script>
+    <script src="JS/registrar.js"></script> <!-- Enlace al script JavaScript que maneja la lógica del registro -->
 </body>
 
 </html>
+

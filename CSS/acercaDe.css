@@ -1,68 +1,76 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Fuente por defecto */
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #F1FAEE;
+    overflow: hidden; /* Evita el desplazamiento */
+    background-color: #F1FAEE; /* Color de fondo de la página */
 }
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Permite que el contenido se expanda a la altura total de la ventana */
 }
 header {
-    background-color: #508C9B;
-    padding: 10px 0;
+    background-color: #508C9B; /* Color de fondo del encabezado */
+    padding: 10px 0; /* Espaciado en la parte superior e inferior del encabezado */
 }
 
 .menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    max-width: 1200px; /* Anchura máxima del menú */
+    margin: 0 auto; /* Centra el menú horizontalmente */
+    padding: 0 20px; /* Espaciado en los laterales */
 }
 .logo img {
-    height: 80px;
-    width: 80px;
-    border-radius: 50px;
+    height: 80px; /* Altura de la imagen del logo */
+    width: 80px; /* Anchura de la imagen del logo */
+    border-radius: 50px; /* Redondea los bordes del logo para que parezca un círculo */
 }
 nav ul {
-    list-style: none;
+    list-style: none; /* Elimina los puntos de la lista */
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: end;
-    margin-left: auto;
-    border: 3px;
-    gap: 10px;
+    align-items: end; /* Alinea los elementos al final de su contenedor */
+    margin-left: auto; /* Empuja la lista de elementos hacia la derecha */
+    border: 3px; /* (Posiblemente incorrecto: no hay un valor de estilo) */
+    gap: 10px; /* Espacio entre los elementos de la lista */
 }
 nav ul li {
-    margin: 0 10px;
-    width: 100px;
-    height: 50px;
-    background-color: #201E43;
+    margin: 0 10px; /* Espacio alrededor de cada elemento de la lista */
+    width: 100px; /* Anchura de cada elemento de la lista */
+    height: 50px; /* Altura de cada elemento de la lista */
+    background-color: #201E43; /* Color de fondo de cada elemento de la lista */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
 }
 nav ul li a {
-    text-decoration: none;
-    border-radius: 3px;
-    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border-radius: 3px; /* Borde ligeramente redondeado para el enlace */
+    color: white; /* Color del texto del enlace */
 }
 nav ul li:hover {
     border-radius: 3px;
-    background-color: #555;
+    background-color: #555; /* Cambia el fondo al pasar el ratón */
 }
 
 footer {
-    background-color: #508C9B;
-    height: auto;
-    margin-top: auto;
+    background-color: #508C9B; /* Color de fondo del pie de página */
+    height: auto; /* Altura del pie de página ajustable al contenido */
+    margin-top: auto; /* Empuja el pie de página hacia el final de la página */
 }
 
 .footer-texto {
-    margin-top: 20px;
+    margin-top: 20px; /* Espaciado superior para el texto del pie de página */
+}
+.cerrarSesionBtn {
+    margin-top: 10px; /* Espaciado superior */
+    font-size: 16px; /* Tamaño de la fuente */
+    background-color: #201E43; /* Color de fondo del botón de "Cerrar Sesión" */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    border-radius: 0 5px 5px 0; /* Bordes redondeados a la derecha */
 }

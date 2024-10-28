@@ -2,52 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="CSS/inicio.css">
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite que la página sea responsiva en diferentes dispositivos -->
+    <title>Inicio</title> <!-- Título de la pestaña del navegador -->
+    <link rel="stylesheet" href="CSS/inicio.css"> <!-- Enlace a la hoja de estilos CSS para esta página -->
 </head>
 
 <body>
 
     <header>
-        <div class="menu">
-            <div class="logo">
-                <img src="Media/logo3.png" alt="" />
+        <div class="menu"> <!-- Contenedor para el menú de navegación -->
+            <div class="logo"> <!-- Sección para el logotipo -->
+                <img src="Media/logo3.png" alt="" /> <!-- Imagen del logo -->
             </div>
             <nav>
-                <ul>
-                    <li><a href="registrarContacto.html">Registrar Contacto</a></li>
-                    <li> <a href="acercaDe.html">Acerca De</a></li>
-                    <li><a href="index.html">Cerrar Sesion</a></li>
+                <ul> <!-- Lista de enlaces de navegación -->
+                    <li><a href="registrarContacto.html">Registrar Contacto</a></li> <!-- Enlace a la página de registro de contactos -->
+                    <li><a href="acercaDe.html">Acerca De</a></li> <!-- Enlace a la página "Acerca De" -->
+                    <li class="cerrarSesionBtn" onclick="confirmarCerrarSesion()">Cerrar Sesión</li> <!-- Enlace para cerrar sesión que llama a la función confirmarCerrarSesion() -->
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
 
-        <div class="container">
-        <div class="search-container">
-            <input type="text" placeholder="Buscar contacto" name="search">
-            <button type="submit">Buscar</button>
-        </div>
+    <main> <!-- Contenedor principal para el contenido de la página -->
+        <div class="container"> <!-- Contenedor general para los elementos de la página -->
+            <div class="search-container"> <!-- Sección para la búsqueda de contactos -->
+                <input type="text" placeholder="Buscar contacto" name="search"> <!-- Campo de entrada para buscar contactos -->
+                <button type="button" onclick="buscarContacto()">Buscar</button> <!-- Botón para enviar la búsqueda -->
+            </div>
 
-        <div class="contactos">
-            <ul id="lista-contactos">
-               
-            </ul>
+            <div class="contactos"> <!-- Sección donde se mostrarán los contactos -->
+                <ul id="lista-contactos"> <!-- Lista donde se llenarán los contactos dinámicamente -->
+                    <!-- Los contactos se agregarán aquí mediante JavaScript -->
+                </ul>
+            </div>
         </div>
-    </div>
     </main>
 
-
-
     <footer>
-        <div class="footer-texto">
-            <p>&copy; Directorio Web. Todos los derechos reservados.</p>
+        <div class="footer-texto"> <!-- Sección del pie de página -->
+            <p>&copy; Directorio Web. Todos los derechos reservados.</p> <!-- Mensaje de derechos reservados -->
         </div>
     </footer>
-<script src="JS/contactos.js"></script>
+
+    <script src="JS/contactos.js"></script> <!-- Enlace al script JavaScript para la lógica de manejo de contactos -->
 </body>
 
 </html>

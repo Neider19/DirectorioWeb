@@ -1,7 +1,6 @@
 {
     "contactos": [
         {
-            
             "nombre": "Neider Ureche",
             "telefono": "+57 304 3355491",
             "correo": "neider@gmail.com",
@@ -9,7 +8,6 @@
             "ciudad": "Santa Marta"
         },
         {
-           
             "nombre": "Pedro Muriel",
             "telefono": "+57 304 2313213",
             "correo": "pedro@gmail.com",
@@ -17,7 +15,6 @@
             "ciudad": "Santa Marta"
         },
         {
-            
             "nombre": "Juan Gomez",
             "telefono": "+57 304 123512",
             "correo": "juan@gmail.com",
@@ -25,7 +22,6 @@
             "ciudad": "Santa Marta"
         },
         {
-           
             "nombre": "Juan Perez",
             "telefono": "+57 304 1232323",
             "correo": "juan@gmail.com",
@@ -33,7 +29,6 @@
             "ciudad": "Santa Marta"
         },
         {
-            
             "nombre": "Pedro Perez",
             "telefono": "+57 304 1232323",
             "correo": "pepo@gmail.com",
@@ -41,12 +36,75 @@
             "ciudad": "Santa Marta"
         },
         {
-            
             "nombre": "Juan Perez",
             "telefono": "+57 304 1232323",
             "correo": "juan@gmail.com",
             "direccion": "carrera 3 z b",
             "ciudad": "Santa Marta"
+        }
+    ],
+    "usuarios": [
+        {
+            "usuario": "Neider12",
+            "contrasena": 123
+        },
+        {
+            "usuario": "Pedro34",
+            "contrasena": 1234141
+        },{
+            "usuario": "Juan32",
+            "contrasena": 123131
+        },
+        {
+            "usuario": "JuanA12",
+            "contrasena": 12312
+        },
+        {
+            "usuario": "Pedro55",
+            "contrasena": 12345
+        },
+        {
+            "usuario": "JuanB12",
+            "contrasena": 1234
+        }
+        
+    ],
+    "registroUsuario": [
+        {
+            "usuario": "Neider12",
+            "telefono": "+57 304 3355491",
+            "correo": "neider@gmail.com",
+            "contrasena": 123
+        },
+        {
+            "usuario": "Pedro34",
+            "telefono": "+57 304 2313213",
+            "correo": "pedro@gmail.com",
+            "contrasena": 1234141
+        },
+        {
+            "usuario": "Juan32",
+            "telefono": "+57 304 123512",
+            "correo": "juan@gmail.com",
+            "contrasena": 123131
+        },
+        {
+            "usuario": "JuanA12",
+            "telefono": "+57 304 1232323",
+            "correo": "juan@gmail.com",
+            "contrasena": 12312
+        },
+        {
+            "usuario": "Pedro55",
+            "telefono": "+57 304 1232323",
+            "correo": "pepo@gmail.com",
+            "contrasena": 12345
+        },
+        {
+            "usuario": "JuanB12",
+            "telefono": "+57 304 1232323",
+            "correo": "juan@gmail.com",
+            "contrasena": 1234
         }
     ]
 }

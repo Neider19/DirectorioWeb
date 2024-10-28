@@ -1,79 +1,79 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #F5F5F5 rgb(51, 51, 51);
-    color: #333333;
+    font-family: Arial, sans-serif; /* Establece la fuente general del documento */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 0; /* Elimina el padding por defecto del navegador */
+    overflow: hidden; /* Oculta el desbordamiento */
+    display: flex; /* Usando flexbox para la disposición de los elementos */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    min-height: 100vh; /* Altura mínima del cuerpo para ocupar toda la ventana */
+    background-color: #F5F5F5; /* Color de fondo suave */
+    color: #333333; /* Color del texto */
 }
 .cuerpo {
-    display: flex;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Usando flexbox para organizar el contenido */
+    width: 100%; /* Ancho completo del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el contenedor */
 }
 .registrar {
-    padding: 40px;
-    background-color: #F1FAEE;
+    padding: 40px; /* Espaciado interno para el área de registro */
+    background-color: #F1FAEE; /* Color de fondo del área de registro */
 }
-h1{
-    display: flex;
-    justify-content: center;
+h1 {
+    display: flex; /* Usando flexbox para centrar el título */
+    justify-content: center; /* Centra horizontalmente el título */
 }
 .formulario {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    max-width: 300px;
-    margin: auto;
+    display: flex; /* Usando flexbox para organizar los elementos dentro del formulario */
+    align-items: center; /* Centra verticalmente los elementos */
+    text-align: center; /* Alineación del texto al centro */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    max-width: 300px; /* Ancho máximo del formulario */
+    margin: auto; /* Centra el formulario horizontalmente */
 }
-.ingresar-btn{
-    padding: 10px 20px;
-    background-color: #3498DB;
-    color: #333333;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
+.ingresar-btn {
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #3498DB; /* Color de fondo del botón */
+    color: #333333; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-decoration: none; /* Elimina el subrayado en el texto del botón */
 }
+
 .ingresar-btn:hover {
-    text-decoration: none;
-    background-color: #555;
+    text-decoration: none; /* Mantiene el texto sin subrayado en hover */
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
 }
 .formulario input {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 90%;
+    padding: 10px; /* Espaciado interno de los campos de entrada */
+    margin-bottom: 20px; /* Espacio inferior entre campos */
+    border: 1px solid #ccc; /* Borde ligero para los campos */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    width: 90%; /* Ancho del campo */
 }
-
 .formulario button {
-    padding: 10px 20px;
-    background-color: #3498DB;
-    color: #333333;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #3498DB; /* Color de fondo del botón */
+    color: #333333; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
-
 
 .formulario button:hover {
-    text-decoration: none;
-    background-color: #555;
+    text-decoration: none; /* Mantiene el texto sin subrayado en hover */
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
 }
-.error{
-    color: red;
-    margin-top: 10px;
+.error {
+    color: red; /* Color del texto para mensajes de error */
+    margin-top: 10px; /* Espacio superior para separación */
 }
+
 .success {
-    color: green;
-    margin-top: 10px;
+    color: green; /* Color del texto para mensajes de éxito */
+    margin-top: 10px; /* Espacio superior para separación */
 }
